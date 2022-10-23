@@ -1,3 +1,6 @@
+
+"""by TechRufy"""
+
 def ControlloStringhe(function):
     def wrapper(*args):
         for arg in args:

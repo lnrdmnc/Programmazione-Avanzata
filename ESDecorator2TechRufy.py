@@ -1,3 +1,5 @@
+
+"""by TechRufy"""
 def contaVarClasse(ClasseA):
     def wrapper(self, t):
 
