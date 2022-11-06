@@ -3,7 +3,7 @@
 def decoraClasse(cls):
     oldInit =cls.__init__
     def newInit(self,*args,**kwargs):
-        self.tupla=([arg for arg in args],["{0}={1}".format(key,value) for key,value in kwargs.items()])
+        self.tupla=(*(arg for arg in args),*(key for key in kwargs.items()))
         oldInit(self,*args,**kwargs)
     cls.__init__=newInit
 
