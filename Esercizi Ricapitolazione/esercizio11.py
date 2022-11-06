@@ -1,6 +1,5 @@
 class C():
     _shared_state={}
-
     class TaleEQuale1():
         def __new__(cls, *args, **kwargs):
             obj = super().__new__(cls, *args, **kwargs)
